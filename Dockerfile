@@ -9,7 +9,7 @@ RUN mvn clean package -Pprod -DskipTests
 # Package stage
 #
 FROM openjdk:11-jdk-slim
-COPY --from=build /target/daily-tracker-1.0-SNAPSHOT.jar dailytracker.jar
+COPY --from=build /target/daily-tracker-1.0-SNAPSHOT.jar daily-tracker.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","dailytracker.jar"]
+ENTRYPOINT ["java","-jar","daily-tracker.jar"]
