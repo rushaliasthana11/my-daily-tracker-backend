@@ -1,0 +1,17 @@
+# Package Files #
+*.jar
+*.war
+*.ear
+.classpath
+# Dependency #
+.mvn/
+.project
+.settings/
+target/
+# Logs #
+logs/
+*~
+bin/
+*.idea
+my-daily-tracker.iml
+$HOME
